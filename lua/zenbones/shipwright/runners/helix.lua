@@ -196,7 +196,7 @@ local function build_helix_theme(colorscheme)
 	add("ui.text.info", fg_style(s.Normal.fg, {}))
 
 	add_comment("Cursor")
-	add("ui.cursor", fg_bg_style(s.Cursor.fg, s.Cursor.bg, {}))
+	add("ui.cursor", fg_bg_style(s.Cursor.fg, s.Cursor.bg.mix(s.Normal.bg, 50), {}))
 	add("ui.cursor.match", fg_bg_style(s.MatchParen.fg, s.MatchParen.bg, {}))
 	add("ui.cursor.primary", fg_bg_style(s.Cursor.fg, s.Cursor.bg, {}))
 
